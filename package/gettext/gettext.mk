@@ -95,6 +95,7 @@ endef
 HOST_GETTEXT_POST_INSTALL_HOOKS += HOST_GETTEXT_ADD_ABOUT_NLS
 
 GETTEXTIZE = $(HOST_CONFIGURE_OPTS) AUTOM4TE=$(HOST_DIR)/bin/autom4te $(HOST_DIR)/bin/gettextize -f
+AUTOPOINT = $(HOST_DIR)/bin/autopoint
 
 $(eval $(autotools-package))
 $(eval $(host-autotools-package))
